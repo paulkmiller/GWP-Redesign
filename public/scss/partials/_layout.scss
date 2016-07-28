@@ -2,11 +2,15 @@
 @import "colors";
 $section-padding-regular: 125px 0;
 $section-padding-tall: 160px 0;
+$section-padding-top: 125px 0 0;
 .has-padding {
     padding: $section-padding-regular;
 }
 .has-padding-tall {
     padding: $section-padding-tall;
+}
+.has-padding-top{
+  padding: $section-padding-top;
 }
 .alternate-bg {
     background-color: $light-grey;
