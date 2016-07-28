@@ -4900,3 +4900,9 @@ Responsive Media Queries
     margin: 20px 0;
   }
 }
+/******** Mapbox Testing *****/
+/* line 1975, ../scss/styles.scss */
+#map {
+  height: 300px;
+  width: 100%;
+}

@@ -31,12 +31,14 @@
 	<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<!-- end favicon links -->
+	<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/flickity.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -608,165 +610,14 @@
 		</div>
 	</section>
 
-	<!-- SECTION: Articles -->
-	<!-- <section class="latest-articles has-padding alternate-bg" id="articles">
+	<!-- SECTION: Mapbox -->
+	<section class="mapbox has-padding alternate-bg">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-sm-4">
-					<h4>Latest Articles</h4>
-				</div>
-				<div class="col-md-8 col-sm-8 sort">
-					<h5>Sort by</h5>
-					<select name="article-sort" id="inputArticle-Sort" class="">
-						<option value="">Experience Design</option>
-						<option value="">Visual Design</option>
-						<option value="">UI Patterns</option>
-						<option value="">Product Design</option>
-					</select>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<article class="article-post">
-						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-01.jpg)">
-								<span class="featured-tag">Featured</span>
-							</div>
-							<figure>
-								<figcaption>
-									<h2>8 solid tips when working with front-end developers</h2>
-									<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-								</figcaption>
-							</figure>
-						</a>
-						<ul class="article-footer">
-							<li class="article-category">
-								<a href="#">Product</a>
-							</li>
-							<li class="article-comments">
-								<span><i class="fa fa-comments"></i> 51</span>
-							</li>
-						</ul>
-					</article>
-				</div>
-				<div class="col-md-4">
-					<article class="article-post">
-						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-02.jpg)">
-							</div>
-							<figure>
-								<figcaption>
-									<h2>The 10 best traits of a awesome design leaders</h2>
-									<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-								</figcaption>
-							</figure>
-						</a>
-						<ul class="article-footer">
-							<li class="article-category">
-								<a href="#">Teams</a>
-							</li>
-							<li class="article-comments">
-								<span><i class="fa fa-comments"></i> 42</span>
-							</li>
-						</ul>
-					</article>
-				</div>
-				<div class="col-md-4">
-					<article class="article-post">
-						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-03.jpg)">
-							</div>
-							<figure>
-								<figcaption>
-									<h2>How to design well collaboratively with an agile product team</h2>
-									<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-								</figcaption>
-							</figure>
-						</a>
-						<ul class="article-footer">
-							<li class="article-category">
-								<a href="#">Teams</a>
-							</li>
-							<li class="article-comments">
-								<span><i class="fa fa-comments"></i> 58</span>
-							</li>
-						</ul>
-					</article>
-				</div>
-			</div>
-			<div class="row has-top-margin">
-				<div class="col-md-4">
-					<article class="article-post">
-						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-04.jpg)">
-							</div>
-							<figure>
-								<figcaption>
-									<h2>The essentials of modern interaction design (mobile + tablet)</h2>
-									<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-								</figcaption>
-							</figure>
-						</a>
-						<ul class="article-footer">
-							<li class="article-category">
-								<a href="#">UX Design</a>
-							</li>
-							<li class="article-comments">
-								<span><i class="fa fa-comments"></i> 14</span>
-							</li>
-						</ul>
-					</article>
-				</div>
-				<div class="col-md-4">
-					<article class="article-post">
-						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-05.jpg)">
-							</div>
-							<figure>
-								<figcaption>
-									<h2>Overcoming barriers encountered in the pitch process (part 1)</h2>
-									<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-								</figcaption>
-							</figure>
-						</a>
-						<ul class="article-footer">
-							<li class="article-category">
-								<a href="#">Product</a>
-							</li>
-							<li class="article-comments">
-								<span><i class="fa fa-comments"></i> 55</span>
-							</li>
-						</ul>
-					</article>
-				</div>
-				<div class="col-md-4">
-					<article class="article-post">
-						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-06.jpg)">
-							</div>
-							<figure>
-								<figcaption>
-									<h2>10 things we've learnt about our users (Case Study)</h2>
-									<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-								</figcaption>
-							</figure>
-						</a>
-						<ul class="article-footer">
-							<li class="article-category">
-								<a href="#">UX Design</a>
-							</li>
-							<li class="article-comments">
-								<span><i class="fa fa-comments"></i> 20</span>
-							</li>
-						</ul>
-					</article>
-				</div>
-			</div>
-			<div class="row is-centered">
-				<a href="#intro" class="btn secondary view-more">View more</a>
+				<div id="map"></div>
 			</div>
 		</div>
-	</section> -->
+	</section>
 	<!-- END SECTION: Articles -->
 
 	<footer class="has-padding footer-bg">
@@ -819,6 +670,7 @@
 	<script src="js/min/retina.min.js"></script>
 	<script src="js/min/jquery.waypoints.min.js"></script>
 	<script src="js/min/flickity.pkgd.min.js"></script>
+	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
 	<script src="js/min/scripts-min.js"></script>
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID and uncomment -->
 	<!--

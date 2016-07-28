@@ -1,11 +1,8 @@
 $(document).ready(function() {
 
-    /***************** Article Class Finder ******************/
-
-    $('.latest-articles').find('img').each(function() {
-        var imgClass = (this.width / this.height > 1) ? 'wide' : 'tall';
-        $(this).addClass(imgClass);
-    });
+  /****************** Mapbox Layer *******************/
+  L.mapbox.accessToken = 'pk.eyJ1IjoicG1pbGxlcmsiLCJhIjoiY2lyNnViOWkzMDBsa2c4bms4MXlpcmNxciJ9.qG5rdqfa7u6BNu8xHHcX4w';
+  L.mapbox.map('map', 'mapbox.streets').setView([38.94, -77.32], 14);
 
     /***************** Like Counter ******************/
 
