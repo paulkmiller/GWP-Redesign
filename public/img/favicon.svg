@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 68 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D4D4D4" offset="0%"></stop>
+            <stop stop-color="#737373" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="28.9251868%" y1="23.8228923%" x2="68.6495703%" y2="36.3434605%" id="linearGradient-2">
+            <stop stop-color="#ECECEC" offset="0%"></stop>
+            <stop stop-color="#737373" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2">
+            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="33" height="33"></rect>
+            <polygon id="Rectangle" fill="#FFFFFF" points="35 36 68 36 35 69"></polygon>
+            <rect id="Rectangle" fill="#FFFFFF" x="0" y="36" width="33" height="33"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="35" y="0" width="33" height="33"></rect>
+            <path d="M36.5429688,68.0732422 C36.5429688,68.0732422 46.9799805,47.768555 45.940918,39 C46.9799805,35.2475587 50.6708984,39.6259766 50.6708984,39.6259766 L36.5429688,68.0732422 Z" id="Path-3" fill="url(#linearGradient-1)"></path>
+            <path d="M35.8642578,69.0529826 L60.9390473,42.716079 C60.9390473,42.716079 49.8080303,49.9753226 45.5697128,38.7880692 C42.8414525,56.039957 35.8642578,69.0529826 35.8642578,69.0529826 Z" id="Path-2" fill="url(#linearGradient-2)" transform="translate(48.401653, 53.920526) rotate(1.000000) translate(-48.401653, -53.920526) "></path>
+        </g>
+    </g>
+</svg>
