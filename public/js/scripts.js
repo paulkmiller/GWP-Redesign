@@ -2,8 +2,9 @@ $(document).ready(function() {
 
     /***************** Mapbox Layer ******************/
 
-  L.mapbox.accessToken = 'pk.eyJ1IjoicG1pbGxlcmsiLCJhIjoiY2lyNnViOWkzMDBsa2c4bms4MXlpcmNxciJ9.qG5rdqfa7u6BNu8xHHcX4w';
-  L.mapbox.map('map-one', 'mapbox.streets').setView([38.94, -77.32], 14);
+    L.mapbox.accessToken = 'pk.eyJ1IjoicG1pbGxlcmsiLCJhIjoiY2lyNnViOWkzMDBsa2c4bms4MXlpcmNxciJ9.qG5rdqfa7u6BNu8xHHcX4w';
+    L.mapbox.map('map-one', 'mapbox.streets').setView([38.94, -77.32], 14);
+
 
     /***************** Like Counter ******************/
 

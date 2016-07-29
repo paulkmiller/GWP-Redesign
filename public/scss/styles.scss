@@ -1972,8 +1972,11 @@ Responsive Media Queries
 
 /******** Mapbox Testing *****/
 
+.mapbox {
+  width: 98%;
+  margin-left: 1%;
+}
+
 .map {
   height: 500px;
-  width: 100%;
-
 }
