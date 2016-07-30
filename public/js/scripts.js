@@ -1,18 +1,39 @@
 $(document).ready(function() {
 
-    /***************** Mapbox Layer ******************/
+  /***************** Mapbox Component ******************/
 
-    L.mapbox.accessToken = 'pk.eyJ1IjoicG1pbGxlcmsiLCJhIjoiY2lyNnViOWkzMDBsa2c4bms4MXlpcmNxciJ9.qG5rdqfa7u6BNu8xHHcX4w';
+  mapboxgl.accessToken = 'pk.eyJ1IjoicG1pbGxlcmsiLCJhIjoiY2lyM3VjMzNsMDFkZHR4bHdxOWs1amt1MiJ9.nc1fPKTYXlgC1zVoYS2Oag';
 
-    var settings = {
-      lat: 38.94,
-      long: -77.32
-      };
+  var settings = {
+      lat: 38.943057,
+      long: -77.321264
+  }
+
+  var geojson = {
+          "type": "FeatureCollection",
+          "features": [{
+                  "type": "Feature",
+                  "properties": {
+                      "message": "Foo",
+                      "iconSize": [60, 60]
+                  },
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [
+                          settings.long,
+                          settings.lat
+                      ]
+                  }
+              }]
+          }
+
 
     var map = new mapboxgl.Map({
         container: 'map-one',
+        style: 'mapbox://styles/mapbox/light-v9',
         center: [settings.long, settings.lat],
-        zoom: 9
+        interactive: false,
+        zoom: 14
     });
 
     var framesPerSecond = 15;
@@ -30,7 +51,7 @@ $(document).ready(function() {
             "data": {
                 "type": "Point",
                 "coordinates": [
-                    0, 0
+                    settings.long, settings.lat
                 ]
             }
         });
@@ -81,33 +102,6 @@ $(document).ready(function() {
         animateMarker(0);
     });
 
-
-
-    /***************** Like Counter ******************/
-
-    $('.count').each(function() {
-        var clicks = Math.floor((Math.random() * 100) + 1);
-        $(this).text(clicks);
-    });
-
-    $(".like_button").one("click", function() {
-        var $count = $(this).parent().find('.count');
-        $count.html($count.html() * 1 + 1);
-        var $icon = $(this).parent().find('.like-counter');
-        $($icon).removeClass("fa-heart-o");
-        $($icon).addClass("fa-heart");
-    });
-
-    $(".like_button").on("click", function() {
-        event.preventDefault();
-    });
-
-    /***************** Share Dropdown ******************/
-
-    $("li a.share-trigger").on("click", function() {
-        $('.share-dropdown').toggleClass("is-open");
-        event.preventDefault();
-    });
 
     /***************** Search Component ******************/
 
