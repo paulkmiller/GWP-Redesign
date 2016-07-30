@@ -1,36 +1,39 @@
 $(document).ready(function() {
 
-    /***************** Article Class Finder ******************/
+  /***************** Mapbox Component ******************/
 
-    $('.latest-articles').find('img').each(function() {
-        var imgClass = (this.width / this.height > 1) ? 'wide' : 'tall';
-        $(this).addClass(imgClass);
-    });
+  mapboxgl.accessToken = 'pk.eyJ1IjoicG1pbGxlcmsiLCJhIjoiY2lyM3VjMzNsMDFkZHR4bHdxOWs1amt1MiJ9.nc1fPKTYXlgC1zVoYS2Oag';
 
-    /***************** Like Counter ******************/
+  var settings = {
+      lat: 38.943057,
+      long: -77.321264
+  }
 
-    $('.count').each(function() {
-        var clicks = Math.floor((Math.random() * 100) + 1);
-        $(this).text(clicks);
-    });
+  var geojson = {
+          "type": "FeatureCollection",
+          "features": [{
+                  "type": "Feature",
+                  "properties": {
+                      "message": "Foo",
+                      "iconSize": [60, 60]
+                  },
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [
+                          settings.long,
+                          settings.lat
+                      ]
+                  }
+              }]
+          }
 
-    $(".like_button").one("click", function() {
-        var $count = $(this).parent().find('.count');
-        $count.html($count.html() * 1 + 1);
-        var $icon = $(this).parent().find('.like-counter');
-        $($icon).removeClass("fa-heart-o");ra
-        $($icon).addClass("fa-heart");
-    });
 
-    $(".like_button").on("click", function() {
-        event.preventDefault();
-    });
-
-    /***************** Share Dropdown ******************/
-
-    $("li a.share-trigger").on("click", function() {
-        $('.share-dropdown').toggleClass("is-open");
-        event.preventDefault();
+    var map = new mapboxgl.Map({
+        container: 'map-one',
+        style: 'mapbox://styles/mapbox/light-v9',
+        center: [settings.long, settings.lat],
+        interactive: false,
+        zoom: 14
     });
 
     /***************** Search Component ******************/
