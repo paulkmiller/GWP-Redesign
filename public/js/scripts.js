@@ -18,7 +18,7 @@ $(document).ready(function() {
         var $count = $(this).parent().find('.count');
         $count.html($count.html() * 1 + 1);
         var $icon = $(this).parent().find('.like-counter');
-        $($icon).removeClass("fa-heart-o");
+        $($icon).removeClass("fa-heart-o");ra
         $($icon).addClass("fa-heart");
     });
 
