@@ -105,6 +105,12 @@ $(document).ready(function() {
         animateMarker(0);
     });
 
+    /***************** Share Dropdown ******************/
+
+    $("li a.share-trigger").on("click", function() {
+        $('.share-dropdown').toggleClass("is-open");
+        event.preventDefault();
+    });
 
     /***************** Search Component ******************/
 

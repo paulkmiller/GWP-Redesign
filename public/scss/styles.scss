@@ -549,8 +549,11 @@ Stats
 Team
 ========================================================================== */
 .crew {
-    .first, .second, .third, .fourth{
-      margin-bottom: 30px;
+    .first,
+    .fourth,
+    .second,
+    .third {
+        margin-bottom: 30px;
     }
     article.crew-member {
         position: relative;
@@ -874,75 +877,132 @@ footer {
         }
     }
 }
-
-
-
+/* ==========================================================================
+Share component
+========================================================================== */
+.share-dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    opacity: 0;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(50,57,74,.31);
+    @include border-radius(5px);
+    &:after {
+        position: absolute;
+        top: 100%;
+        left: 75%;
+        width: 0;
+        height: 0;
+        margin-left: -5px;
+        content: ' ';
+        pointer-events: none;
+        border: solid transparent;
+        border-width: 5px;
+        border-color: rgba(255, 255, 255, 0);
+        border-top-color: #fff;
+        box-shadow: 0 0 20px 0 rgba(50,57,74,.31);
+    }
+    ul {
+        li {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 5px 20px;
+            border-right: solid 1px $porcelain;
+            &:last-child {
+                padding: none;
+                border-right: none;
+            }
+            a {
+                color: $dark-grey;
+            }
+            a.share-twitter {
+                &:hover {
+                    color: #00aced;
+                }
+            }
+            a.share-facebook {
+                &:hover {
+                    color: #4a6ea9;
+                }
+            }
+            a.share-linkedin {
+                &:hover {
+                    color: #007ab9;
+                }
+            }
+            i {
+                margin: 0;
+            }
+        }
+    }
+}
+.is-open {
+    top: -20px;
+    opacity: 1;
+}
 /* ==========================================================================
 Contact Page
 ===========================================================================*/
-.map{
-  height: 500px;
+.map {
+    height: 500px;
 }
-
 // Mixin Gradient
 @mixin gradient-lateral($startcolor,$endcolor) {
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,$startcolor), color-stop(100%,$endcolor));
-  background: -webkit-linear-gradient(left, $startcolor 0%,$endcolor 100%);
-  background:    -moz-linear-gradient(left, $startcolor 0%, $endcolor 100%);
-  background:      -o-linear-gradient(left, $startcolor 0%,$endcolor 100%);
-  background:     -ms-linear-gradient(left, $startcolor 0%,$endcolor 100%);
-  background:         linear-gradient(to right, $startcolor 0%,$endcolor 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,$startcolor), color-stop(100%,$endcolor));
+    background: -webkit-linear-gradient(left, $startcolor 0%,$endcolor 100%);
+    background: -moz-linear-gradient(left, $startcolor 0%, $endcolor 100%);
+    background: -o-linear-gradient(left, $startcolor 0%,$endcolor 100%);
+    background: -ms-linear-gradient(left, $startcolor 0%,$endcolor 100%);
+    background: linear-gradient(to right, $startcolor 0%,$endcolor 100%);
 }
-
 // Mixin Absolute Positioning
 @mixin absolute($top,$right,$bottom,$left) {
-  position: absolute;
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
 }
-
-
 // #container {
 //   display: block;
 //   @include absolute(40px,40px,40px,40px);
 // }
-
 #map-canvas,
 #map-inner {
-  display: block;
-  position: absolute;
-  left: 0;
-  height: 500px;
-  z-index: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 500px;
+    z-index: 0;
 }
-
 #map-inner {
-  z-index: 100;
-  // @include gradient-lateral(rgba(65,74,82,1),rgba(30,87,153,0));
-  padding: 30px;
-  color: #fff;
-  padding-right: 50%;
-  // Flag
-  &::before {
-    z-index: -50;
-    display: block;
-    @include absolute(0,0,0,0);
-    content: "";
-  }
-  // Overflow
-  .overlay {
-    display: block;
-    overflow: hidden;
-    max-height: 100%;
-    margin-top: 15%;
-    h1 span.contact-text{
-      color: $slate;
-      background: rgb(237, 223, 36);
-      padding: 2px 0;
+    z-index: 100;
+    // @include gradient-lateral(rgba(65,74,82,1),rgba(30,87,153,0));
+    padding: 30px;
+    color: #fff;
+    padding-right: 50%;
+    // Flag
+    &::before {
+        z-index: -50;
+        display: block;
+        @include absolute(0,0,0,0);
+        content: "";
     }
-  }
+    // Overflow
+    .overlay {
+        display: block;
+        overflow: hidden;
+        max-height: 100%;
+        margin-top: 15%;
+        h1 span.contact-text {
+            color: $slate;
+            background: rgb(237, 223, 36);
+            padding: 2px 0;
+        }
+    }
 }
 /* ==========================================================================
 Stroke Gap Icons
@@ -1685,12 +1745,12 @@ Responsive Media Queries
         margin-top: 50px;
     }
     .primary-nav li a {
-      font-size: 12px;
-      color: red !important;
+        font-size: 12px;
+        color: red !important;
     }
-    .header-nav-wrapper nav ul li{
-      padding: 10px;
-      background: red !important;
+    .header-nav-wrapper nav ul li {
+        padding: 10px;
+        background: red !important;
     }
 }
 // @media screen and (min-width: 920px){
@@ -1856,25 +1916,16 @@ Responsive Media Queries
     }
 }
 @media screen and (max-width:320px) {}
-
-
 /******** Mapbox Testing *****/
-
 .map {
-  height: 500px;
-  width: 100%;
+    height: 500px;
+    width: 100%;
 }
-
-.mapboxgl-marker{
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Map_marker_font_awesome.svg/2000px-Map_marker_font_awesome.svg.png");
-  height: 50px;
-  width: auto;
+.mapboxgl-marker {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Map_marker_font_awesome.svg/2000px-Map_marker_font_awesome.svg.png");
+    height: 50px;
+    width: auto;
 }
-
 .gradient {
-  background-image:
-    linear-gradient(
-      to right,
-      #414A52, rgba(0,0,0,0)
-    );
+    background-image: linear-gradient( to right, #414A52, rgba(0,0,0,0) );
 }
