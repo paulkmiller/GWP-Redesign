@@ -4902,12 +4902,19 @@ Responsive Media Queries
 }
 /******** Mapbox Testing *****/
 /* line 1975, ../scss/styles.scss */
-.mapbox {
-  width: 98%;
-  margin-left: 1%;
+.map {
+  height: 500px;
+  width: 100%;
 }
 
 /* line 1980, ../scss/styles.scss */
-.map {
-  height: 500px;
+.mapboxgl-marker {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Map_marker_font_awesome.svg/2000px-Map_marker_font_awesome.svg.png");
+  height: 50px;
+  width: auto;
+}
+
+/* line 1986, ../scss/styles.scss */
+.gradient {
+  background-image: linear-gradient(to right, #414a52, rgba(0, 0, 0, 0));
 }

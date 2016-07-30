@@ -1972,11 +1972,21 @@ Responsive Media Queries
 
 /******** Mapbox Testing *****/
 
-.mapbox {
-  width: 98%;
-  margin-left: 1%;
-}
-
 .map {
   height: 500px;
+  width: 100%;
+}
+
+.mapboxgl-marker{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Map_marker_font_awesome.svg/2000px-Map_marker_font_awesome.svg.png");
+  height: 50px;
+  width: auto;
+}
+
+.gradient {
+  background-image:
+    linear-gradient(
+      to right,
+      #414A52, rgba(0,0,0,0)
+    );
 }
