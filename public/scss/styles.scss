@@ -918,32 +918,35 @@ Contact Page
   z-index: 0;
 }
 
-#map-inner {
-  z-index: 100;
-  // @include gradient-lateral(rgba(65,74,82,1),rgba(30,87,153,0));
-  padding: 30px;
-  color: #fff;
-  padding-right: 50%;
-  // Flag
-  &::before {
-    z-index: -50;
-    display: block;
-    @include absolute(0,0,0,0);
-    content: "";
-  }
-  // Overflow
-  .overlay {
-    display: block;
-    overflow: hidden;
-    max-height: 100%;
-    margin-top: 15%;
-    h1 span.contact-text{
-      color: $slate;
-      background: rgb(237, 223, 36);
-      padding: 2px 0;
+  #map-inner {
+    z-index: 100;
+    // @include gradient-lateral(rgba(65,74,82,1),rgba(30,87,153,0));
+    padding: 30px;
+    color: #fff;
+    padding-right: 50%;
+    // Flag
+    &::before {
+      z-index: -50;
+      display: block;
+      @include absolute(0,0,0,0);
+      content: "";
+    }
+    .contact-overlay {
+      display: block;
+      overflow: hidden;
+      max-height: 100%;
+      margin-top: 15%;
+      h1 span.contact-text{
+        color: $slate;
+        background: rgb(237, 223, 36);
+        padding: 2px 0;
+      }
     }
   }
-}
+
+  .contact-container{
+    padding-top:10px;
+  }
 /* ==========================================================================
 Stroke Gap Icons
 ========================================================================== */
