@@ -3316,14 +3316,14 @@ Contact Page
   content: "";
 }
 /* line 935, ../scss/styles.scss */
-#map-inner .overflow {
+#map-inner .overlay {
   display: block;
   overflow: hidden;
   max-height: 100%;
   margin-top: 15%;
 }
 /* line 940, ../scss/styles.scss */
-#map-inner .overflow h1 span.contact-text {
+#map-inner .overlay h1 span.contact-text {
   color: #414A52;
   background: #eddf24;
   padding: 2px 0;
