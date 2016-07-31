@@ -550,8 +550,8 @@ Stats
 // Stats City
 
 @keyframes fly {
-	0%{transform:translateX(-50px);}
-	100%{ transform:translateX(-100px);};
+	0%{transform:translateX(0em);}
+	100%{ transform:translateX(-10em);};
 }
 
 .scene {
@@ -576,7 +576,7 @@ Stats
   height:255px;
   bottom:250px;
   background:url(https://github.com/balajmarius/parallax/blob/master/img/clouds.png?raw=true) no-repeat center;
-  animation: fly 6s linear infinite alternate;
+  animation: fly 12s linear infinite alternate;
 
 }
 .scene div.trees {
@@ -1009,7 +1009,7 @@ Contact Page
     height: 500px;
 }
 
-.contact-container{
+.map-container{
   padding-top: 10px;
 }
 // Mixin Gradient
@@ -1059,7 +1059,7 @@ Contact Page
         content: "";
     }
     // Overflow
-    .contact-overlay {
+    .map-overflow {
         display: block;
         overflow: hidden;
         max-height: 100%;

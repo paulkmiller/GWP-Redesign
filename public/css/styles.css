@@ -2903,10 +2903,10 @@ Stats
 
 @keyframes fly {
   0% {
-    transform: translateX(-50px);
+    transform: translateX(0em);
   }
   100% {
-    transform: translateX(-100px);
+    transform: translateX(-10em);
   }
 }
 /* line 557, ../scss/styles.scss */
@@ -2937,7 +2937,7 @@ Stats
   height: 255px;
   bottom: 250px;
   background: url(https://github.com/balajmarius/parallax/blob/master/img/clouds.png?raw=true) no-repeat center;
-  animation: fly 6s linear infinite alternate;
+  animation: fly 12s linear infinite alternate;
 }
 
 /* line 582, ../scss/styles.scss */
@@ -3433,7 +3433,7 @@ Contact Page
 }
 
 /* line 1012, ../scss/styles.scss */
-.contact-container {
+.map-container {
   padding-top: 10px;
 }
 
@@ -3471,14 +3471,14 @@ Contact Page
   content: "";
 }
 /* line 1062, ../scss/styles.scss */
-#map-inner .contact-overlay {
+#map-inner .map-overflow {
   display: block;
   overflow: hidden;
   max-height: 100%;
   margin-top: 6em;
 }
 /* line 1067, ../scss/styles.scss */
-#map-inner .contact-overlay h1 span.contact-text {
+#map-inner .map-overflow h1 span.contact-text {
   color: #414A52;
   background: #eddf24;
   padding: 2px 0;
