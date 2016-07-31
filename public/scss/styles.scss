@@ -507,10 +507,11 @@ Company
 /* ==========================================================================
 Stats
 ========================================================================== */
+
 .stats {
     background: url('../img/stats_bg2.jpg') no-repeat center center;
     background-size: cover;
-    background-position-y: -390px;
+    background-position-y: -210px;
     i.icon {
         font-size: 50px;
         display: inline-block;
@@ -545,6 +546,64 @@ Stats
         text-align: left;
     }
 }
+
+// Stats City
+
+@keyframes fly {
+	0%{transform:translateX(-50px);}
+	100%{ transform:translateX(-100px);};
+}
+
+.scene {
+  height:600px;
+  background-color: $teal;
+
+}
+.scene > div {
+  position:absolute;
+  bottom:0;
+}
+.ground {
+  width:100%;
+  height:20px;
+  background:$slate;
+  z-index:999;
+}
+.scene > div.clouds {
+  width:895px;
+  left:50%;
+  margin-left:-447px;
+  height:255px;
+  bottom:250px;
+  background:url(https://github.com/balajmarius/parallax/blob/master/img/clouds.png?raw=true) no-repeat center;
+  animation: fly 6s linear infinite alternate;
+
+}
+.scene div.trees {
+  width:908px;
+  height:174px;
+  background:url(https://github.com/balajmarius/parallax/blob/master/img/trees.png?raw=true) no-repeat center;
+  z-index:100;
+  left:50%;
+  bottom:20px;
+  margin-left:-454px;
+}
+.scene div.grass {
+  width:964px;
+  height:37px;
+  z-index:200;
+  left:50%;
+  bottom:20px;
+  margin-left:-482px;
+  background:url(https://github.com/balajmarius/parallax/blob/master/img/grass.png?raw=true) no-repeat center;
+}
+.buildings {
+  width:763px;
+  height:303px;
+  left:50%;
+  margin-left:-400px;
+  background:url(https://github.com/balajmarius/parallax/blob/master/img/buildings.png?raw=true) no-repeat center;
+ }
 /* ==========================================================================
 Team
 ========================================================================== */
@@ -837,12 +896,12 @@ footer {
     .footer-branding {
         margin-bottom: 40px;
         .footer-branding-logo {
-            background-image: url("/img/gwp-logo.svg");
             background-repeat: no-repeat;
             background-size: cover cover;
             margin-bottom: 10px;
             background-position-x: -14px;
             min-height: 122px;
+            transform: translateX(-15px);
         }
     }
     .footer-nav {
@@ -970,6 +1029,10 @@ Contact Page
     bottom: $bottom;
     left: $left;
 }
+
+.mapbox-row{
+  margin: 0;
+}
 // #container {
 //   display: block;
 //   @include absolute(40px,40px,40px,40px);
@@ -1000,7 +1063,7 @@ Contact Page
         display: block;
         overflow: hidden;
         max-height: 100%;
-        margin-top: 15%;
+        margin-top: 6em;
         h1 span.contact-text {
             color: $slate;
             background: rgb(237, 223, 36);
@@ -1918,16 +1981,3 @@ Responsive Media Queries
     }
 }
 @media screen and (max-width:320px) {}
-/******** Mapbox Testing *****/
-.map {
-    height: 500px;
-    width: 100%;
-}
-.mapboxgl-marker {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Map_marker_font_awesome.svg/2000px-Map_marker_font_awesome.svg.png");
-    height: 50px;
-    width: auto;
-}
-.gradient {
-    background-image: linear-gradient( to right, #414A52, rgba(0,0,0,0) );
-}
