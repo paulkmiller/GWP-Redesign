@@ -509,8 +509,9 @@ Company
 Stats
 ========================================================================== */
 .stats {
-    background: url('../img/stats_bg.jpg') no-repeat center center;
+    background: url('../img/stats_bg2.jpg') no-repeat center center;
     background-size: cover;
+    background-position-y: -390px;
     i.icon {
         font-size: 50px;
         display: inline-block;
