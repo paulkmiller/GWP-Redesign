@@ -511,9 +511,9 @@ Stats
 ========================================================================== */
 
 .stats {
-    background: url('../img/stats_bg2.jpg') no-repeat center center;
+    background: url('../img/stats_bg6.jpeg') no-repeat center center;
     background-size: cover;
-    background-position-y: -210px;
+    // background-position-y: -210px;
     i.icon {
         font-size: 50px;
         display: inline-block;
@@ -570,16 +570,6 @@ Stats
   height:20px;
   background:$slate;
   z-index:999;
-}
-.scene > div.clouds {
-  width:895px;
-  left:50%;
-  margin-left:-447px;
-  height:255px;
-  bottom:250px;
-  background:url("/img/clouds.png") no-repeat center;
-  animation: fly 12s linear infinite alternate;
-
 }
 .scene div.trees {
   width:908px;
