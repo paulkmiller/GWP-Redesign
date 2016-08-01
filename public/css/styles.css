@@ -3637,7 +3637,7 @@ Contact Page
 
 /* line 1195, ../scss/styles.scss */
 .mail-message-area {
-  width: 100%;
+  width: auto;
   padding: 0 15px;
 }
 
@@ -3648,7 +3648,7 @@ Contact Page
   -webkit-transition: all 0.7s;
   -moz-transition: all 0.7s;
   transition: all 0.7s;
-  margin: 0 auto;
+  margin: 0 auto 0 25px;
   border-radius: 0;
 }
 
@@ -3702,8 +3702,8 @@ Contact Page
 .textarea {
   max-height: 200px;
   max-width: 100%;
-  padding: 0;
-  margin-top: 11px;
+  margin-top: 3px;
+  line-height: 6px;
 }
 
 /* line 1257, ../scss/styles.scss */
