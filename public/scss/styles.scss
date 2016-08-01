@@ -1288,28 +1288,23 @@ Contact Page
 /* Send Button Styles */
 
  .form-btn{
-   display: block;
    float: left;
    height: auto;
    padding:15px;
-   color:#fff;
-   background:#8BC3A3;
-   border:none;
-   border-radius:3px;
+   color:$slate;
+   background:$white;
+   border:1px solid $slate;
    outline: none;
    -webkit-transition: all 0.3s;
    -moz-transition: all 0.3s;
    transition: all 0.3s;
    margin:auto;
-   box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-   -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-   -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
  }
 
  .form-btn:hover{
-   background:#111;
-   color: white;
-   border:none;
+   background:$slate;
+   color: $white;
+   border:1px solid $white;
  }
 
  .form-btn:active{
