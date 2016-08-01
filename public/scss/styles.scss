@@ -1217,97 +1217,75 @@ Contact Page
    margin:25px auto 0;
  }
 
-/* Input Styles */
-
- .form{
-   width: 100%;
-   padding: 15px 0 7px;
-   border-bottom:3px solid $slate;
-   border-right: none;
-   border-left: none;
-   border-top: none;
-   margin-bottom:30px;
-   color:#727272 !important;
-   font-size:13px;
-   -webkit-transition: all 0.4s;
-   -moz-transition: all 0.4s;
-   transition: all 0.4s;
+ .mapboxgl-ctrl-attrib .mapbox-improve-map{
+   display: none;
  }
 
- .form:hover{
-   border-bottom:3px solid $teal;
+  .form{
+    width: 100%;
+    padding: 15px 0 7px;
+    border-bottom:3px solid $slate;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    margin-bottom:30px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form:hover{
+    border-bottom:3px solid $teal;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border-bottom:3px solid $dark-teal;
+  }
+
+  .textarea{
+    max-height: 200px;
+    max-width: 100%;
+    padding: 0;
+    margin-top: 11px;
+  }
+
+  .form-btn{
+    float: left;
+    height: auto;
+    padding:15px;
+    color:$orange;
+    background:$white;
+    border:1px solid $orange;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    text-transform: uppercase;
+  }
+
+  .form-btn:hover{
+    background:$orange;
+    color: $white;
+    border:1px solid $white;
+  }
+
+  .form-btn:active{
+    opacity: 0.9;
+  }
+ center{
+  margin-top:330px;
+ }
+ input {
+    position: relative;
+    z-index: 9999;
  }
 
- .form:focus{
-   color: white;
-   outline: none;
-   border-bottom:3px solid $dark-teal;
- }
 
- .textarea{
-   max-height: 200px;
-   max-width: 100%;
-   padding: 0;
-   margin-top: 11px;
- }
-
-/* Generic Button Styles */
-
- .button{
-   padding:8px 12px;
-   background:#0A5175;
-   display: block;
-   width:120px;
-   margin:10px 0 0px 0;
-   border-radius:3px;
-   -webkit-transition: all 0.3s;
-   -moz-transition: all 0.3s;
-   transition: all 0.3s;
-   text-align:center;
-   font-size:0.8em;
-   box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-   -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-   -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
- }
-
- .button:hover{
-   background:#8BC3A3;
-   color:white;
- }
-
-/* Send Button Styles */
-
- .form-btn{
-   float: left;
-   height: auto;
-   padding:15px;
-   color:$orange;
-   background:$white;
-   border:1px solid $orange;
-   outline: none;
-   -webkit-transition: all 0.3s;
-   -moz-transition: all 0.3s;
-   transition: all 0.3s;
-   margin:auto;
-   text-transform: uppercase;
- }
-
- .form-btn:hover{
-   background:$orange;
-   color: $white;
-   border:1px solid $white;
- }
-
- .form-btn:active{
-   opacity: 0.9;
- }
-center{
- margin-top:330px;
-}
-input {
-   position: relative;
-   z-index: 9999;
-}
 /* ==========================================================================
 Stroke Gap Icons
 ========================================================================== */
