@@ -10,12 +10,12 @@ Button styles
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $white;
-    background-color: $cyan;
-    padding: 20px;
+    background-color: $green;
+    padding: 20px 80px;
     text-decoration: none;
     line-height: 1;
     &:hover {
-        background-color: $dark-cyan;
+        background-color: $dark-green;
     }
 }
 .btn.secondary {
