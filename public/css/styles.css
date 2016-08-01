@@ -310,7 +310,7 @@ a.text-link:hover:after {
 
 /* line 9, ../scss/partials/_layout.scss */
 .contact-row {
-  padding: 70px;
+  padding: 70px 0;
 }
 
 /* line 12, ../scss/partials/_layout.scss */
