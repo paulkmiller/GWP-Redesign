@@ -10,12 +10,12 @@ Button styles
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $white;
-    background-color: $teal;
+    background-color: $cyan;
     padding: 20px;
     text-decoration: none;
     line-height: 1;
     &:hover {
-        background-color: $dark-teal;
+        background-color: $dark-cyan;
     }
 }
 .btn.secondary {
@@ -23,20 +23,20 @@ Button styles
     font-size: $font-size-button;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: $teal;
-    border: 2px solid $teal;
+    color: $cyan;
+    border: 2px solid $cyan;
     padding: 15px 20px;
     text-decoration: none;
     line-height: 1;
     &:hover {
         color: $white;
-        background-color: $dark-teal;
-        border-color: $dark-teal;
+        background-color: $dark-cyan;
+        border-color: $dark-cyan;
     }
     &:focus {
         color: $white;
-        background-color: $teal;
-        border-color: $teal;
+        background-color: $cyan;
+        border-color: $cyan;
     }
 }
 .btn.secondary-white {
@@ -51,12 +51,12 @@ Button styles
     text-decoration: none;
     line-height: 1;
     &:hover {
-        color: $teal;
+        color: $cyan;
         background-color: $white;
         border-color: $white;
     }
     &:focus {
-        color: $teal;
+        color: $cyan;
         background-color: $white;
         border-color: $white;
     }

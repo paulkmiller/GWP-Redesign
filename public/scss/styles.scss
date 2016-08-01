@@ -44,11 +44,11 @@ a {
     transition-timing-function: ease;
     -webkit-transition-duration: 200ms;
     transition-duration: 200ms;
-    color: $green;
+    color: $cyan;
 }
 a:hover {
     text-decoration: none;
-    color: $dark-green;
+    color: $dark-cyan;
 }
 ol,
 ul {
@@ -199,7 +199,7 @@ Main Nav
                 text-decoration: none;
                 color: $slate;
                 &:hover {
-                    color: $green;
+                    color: $cyan;
                 }
                 &:before {
                     position: absolute;
@@ -213,7 +213,7 @@ Main Nav
                     transition: all 0.3s ease-in-out 0s;
                     -webkit-transform: scaleX(0);
                     transform: scaleX(0);
-                    background-color: $green;
+                    background-color: $cyan;
                 }
                 &:hover:before {
                     visibility: visible;
@@ -257,7 +257,7 @@ Main Nav
                         transition: all 0.3s ease-in-out 0s;
                         -webkit-transform: scaleX(0);
                         transform: scaleX(0);
-                        background-color: $green;
+                        background-color: $cyan;
                     }
                     &:hover:before {
                         visibility: visible;
@@ -562,7 +562,7 @@ Stats
 
 .scene {
   height:600px;
-  background-color: $teal;
+  background-color: $cyan;
 
 }
 .scene > div {
@@ -996,7 +996,7 @@ footer {
             a {
                 color: $white;
                 &:hover {
-                    color: $green;
+                    color: $cyan;
                 }
             }
         }
@@ -1241,13 +1241,13 @@ Contact Page
   }
 
   .form:hover{
-    border-bottom:3px solid $green;
+    border-bottom:3px solid $cyan;
   }
 
   .form:focus{
     color: white;
     outline: none;
-    border-bottom:3px solid $dark-green;
+    border-bottom:3px solid $dark-cyan;
   }
 
   .textarea{
@@ -1985,7 +1985,7 @@ Responsive Media Queries
         color: $white;
     }
     .secondary-nav-wrapper ul li.subscribe a:hover {
-        color: $green;
+        color: $cyan;
     }
     .secondary-nav-wrapper ul.secondary-nav li.subscribe {
         display: block;

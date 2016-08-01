@@ -115,7 +115,7 @@ h4:after {
   height: 2px;
   margin-top: 15px;
   content: '';
-  background-color: #7AE2DE;
+  background-color: #91D4D8;
 }
 
 /* line 85, ../scss/partials/_typography.scss */
@@ -180,7 +180,7 @@ h4:after {
   height: 2px;
   margin-top: 15px;
   content: '';
-  background-color: #7AE2DE;
+  background-color: #91D4D8;
 }
 
 /* line 85, ../scss/partials/_typography.scss */
@@ -208,14 +208,14 @@ Button styles
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #7AE2DE;
+  background-color: #91D4D8;
   padding: 20px;
   text-decoration: none;
   line-height: 1;
 }
 /* line 17, ../scss/partials/_buttons.scss */
 .btn.primary:hover {
-  background-color: #71D5D2;
+  background-color: #69C9CD;
 }
 
 /* line 21, ../scss/partials/_buttons.scss */
@@ -224,8 +224,8 @@ Button styles
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #7AE2DE;
-  border: 2px solid #7AE2DE;
+  color: #91D4D8;
+  border: 2px solid #91D4D8;
   padding: 15px 20px;
   text-decoration: none;
   line-height: 1;
@@ -233,14 +233,14 @@ Button styles
 /* line 31, ../scss/partials/_buttons.scss */
 .btn.secondary:hover {
   color: #ffffff;
-  background-color: #71D5D2;
-  border-color: #71D5D2;
+  background-color: #69C9CD;
+  border-color: #69C9CD;
 }
 /* line 36, ../scss/partials/_buttons.scss */
 .btn.secondary:focus {
   color: #ffffff;
-  background-color: #7AE2DE;
-  border-color: #7AE2DE;
+  background-color: #91D4D8;
+  border-color: #91D4D8;
 }
 
 /* line 42, ../scss/partials/_buttons.scss */
@@ -258,13 +258,13 @@ Button styles
 }
 /* line 53, ../scss/partials/_buttons.scss */
 .btn.secondary-white:hover {
-  color: #7AE2DE;
+  color: #91D4D8;
   background-color: #ffffff;
   border-color: #ffffff;
 }
 /* line 58, ../scss/partials/_buttons.scss */
 .btn.secondary-white:focus {
-  color: #7AE2DE;
+  color: #91D4D8;
   background-color: #ffffff;
   border-color: #ffffff;
 }
@@ -1435,7 +1435,7 @@ body.vjs-full-window {
 
 /* line 814, ../scss/partials/_video_skin.scss */
 .video-js .vjs-play-progress {
-  background-color: rgba(122, 226, 222, 0.75);
+  background-color: rgba(145, 212, 216, 0.75);
 }
 
 /* line 817, ../scss/partials/_video_skin.scss */
@@ -2293,13 +2293,13 @@ a {
   transition-timing-function: ease;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  color: #57C0A2;
+  color: #91D4D8;
 }
 
 /* line 49, ../scss/styles.scss */
 a:hover {
   text-decoration: none;
-  color: #499f87;
+  color: #69C9CD;
 }
 
 /* line 53, ../scss/styles.scss */
@@ -2501,7 +2501,7 @@ Main Nav
 }
 /* line 201, ../scss/styles.scss */
 .header-nav-wrapper nav ul li a:hover {
-  color: #57C0A2;
+  color: #91D4D8;
 }
 /* line 204, ../scss/styles.scss */
 .header-nav-wrapper nav ul li a:before {
@@ -2516,7 +2516,7 @@ Main Nav
   transition: all 0.3s ease-in-out 0s;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  background-color: #57C0A2;
+  background-color: #91D4D8;
 }
 /* line 218, ../scss/styles.scss */
 .header-nav-wrapper nav ul li a:hover:before {
@@ -2567,7 +2567,7 @@ Main Nav
   transition: all 0.3s ease-in-out 0s;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  background-color: #57C0A2;
+  background-color: #91D4D8;
 }
 /* line 262, ../scss/styles.scss */
 .secondary-nav-wrapper ul.secondary-nav li.subscribe a:hover:before {
@@ -2927,7 +2927,7 @@ Stats
 /* line 563, ../scss/styles.scss */
 .scene {
   height: 600px;
-  background-color: #7AE2DE;
+  background-color: #91D4D8;
 }
 
 /* line 568, ../scss/styles.scss */
@@ -3438,7 +3438,7 @@ footer ul li a {
 }
 /* line 998, ../scss/styles.scss */
 footer ul li a:hover {
-  color: #57C0A2;
+  color: #91D4D8;
 }
 /* line 1004, ../scss/styles.scss */
 footer .footer-branding {
@@ -3692,14 +3692,14 @@ Contact Page
 
 /* line 1243, ../scss/styles.scss */
 .form:hover {
-  border-bottom: 3px solid #57C0A2;
+  border-bottom: 3px solid #91D4D8;
 }
 
 /* line 1247, ../scss/styles.scss */
 .form:focus {
   color: white;
   outline: none;
-  border-bottom: 3px solid #499f87;
+  border-bottom: 3px solid #69C9CD;
 }
 
 /* line 1253, ../scss/styles.scss */
@@ -4874,7 +4874,7 @@ Responsive Media Queries
 
   /* line 1987, ../scss/styles.scss */
   .secondary-nav-wrapper ul li.subscribe a:hover {
-    color: #57C0A2;
+    color: #91D4D8;
   }
 
   /* line 1990, ../scss/styles.scss */
