@@ -575,14 +575,14 @@ Stats
   margin-left:-447px;
   height:255px;
   bottom:250px;
-  background:url(https://github.com/balajmarius/parallax/blob/master/img/clouds.png?raw=true) no-repeat center;
+  background:url("/img/clouds.png") no-repeat center;
   animation: fly 12s linear infinite alternate;
 
 }
 .scene div.trees {
   width:908px;
   height:174px;
-  background:url(https://github.com/balajmarius/parallax/blob/master/img/trees.png?raw=true) no-repeat center;
+  background:url("/img/trees.png") no-repeat center;
   z-index:100;
   left:50%;
   bottom:20px;
@@ -595,14 +595,14 @@ Stats
   left:50%;
   bottom:20px;
   margin-left:-482px;
-  background:url(https://github.com/balajmarius/parallax/blob/master/img/grass.png?raw=true) no-repeat center;
+  background:url("/img/grass.png") no-repeat center;
 }
 .buildings {
   width:763px;
   height:303px;
   left:50%;
   margin-left:-400px;
-  background:url(https://github.com/balajmarius/parallax/blob/master/img/buildings.png?raw=true) no-repeat center;
+  background:url("/img/buildings.png") no-repeat center;
  }
 
  // Stats City clouds
@@ -1176,6 +1176,7 @@ Contact Page
         overflow: hidden;
         max-height: 100%;
         margin-top: 6em;
+        padding-left: 4em;
         h1 span.contact-text {
             color: $slate;
             background: rgb(237, 223, 36);
@@ -1228,10 +1229,12 @@ Contact Page
 
  .form{
    width: 100%;
-   padding: 15px;
-   background:#f8f8f8;
-   border:1px solid rgba(0, 0, 0, 0.075);
-   margin-bottom:25px;
+   padding: 15px 0 7px;
+   border-bottom:3px solid $slate;
+   border-right: none;
+   border-left: none;
+   border-top: none;
+   margin-bottom:30px;
    color:#727272 !important;
    font-size:13px;
    -webkit-transition: all 0.4s;
@@ -1240,19 +1243,20 @@ Contact Page
  }
 
  .form:hover{
-   border:1px solid #8BC3A3;
+   border-bottom:3px solid $teal;
  }
 
  .form:focus{
    color: white;
    outline: none;
-   border:1px solid #8BC3A3;
+   border-bottom:3px solid $teal;
  }
 
  .textarea{
-   height: 200px;
    max-height: 200px;
    max-width: 100%;
+   padding: 0;
+   margin-top: 12px;
  }
 
 /* Generic Button Styles */
@@ -1282,8 +1286,8 @@ Contact Page
 /* Send Button Styles */
 
  .form-btn{
-   width:100%;
    display: block;
+   float: left;
    height: auto;
    padding:15px;
    color:#fff;
