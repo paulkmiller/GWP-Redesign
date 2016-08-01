@@ -44,11 +44,11 @@ a {
     transition-timing-function: ease;
     -webkit-transition-duration: 200ms;
     transition-duration: 200ms;
-    color: $teal;
+    color: $green;
 }
 a:hover {
     text-decoration: none;
-    color: $dark-teal;
+    color: $dark-green;
 }
 ol,
 ul {
@@ -168,7 +168,7 @@ Main Nav
         width: 340px;
         padding: 12px 0 6px 32px;
         text-align: center;
-        border-bottom: solid 5px $teal;
+        border-bottom: solid 5px $green;
     }
     .primary-nav-wrapper {
         float: right;
@@ -199,7 +199,7 @@ Main Nav
                 text-decoration: none;
                 color: $slate;
                 &:hover {
-                    color: $teal;
+                    color: $green;
                 }
                 &:before {
                     position: absolute;
@@ -213,7 +213,7 @@ Main Nav
                     transition: all 0.3s ease-in-out 0s;
                     -webkit-transform: scaleX(0);
                     transform: scaleX(0);
-                    background-color: $teal;
+                    background-color: $green;
                 }
                 &:hover:before {
                     visibility: visible;
@@ -257,7 +257,7 @@ Main Nav
                         transition: all 0.3s ease-in-out 0s;
                         -webkit-transform: scaleX(0);
                         transform: scaleX(0);
-                        background-color: $teal;
+                        background-color: $green;
                     }
                     &:hover:before {
                         visibility: visible;
@@ -322,7 +322,7 @@ Main Nav
                 transition: all 300ms;
                 color: $white;
                 border: none;
-                border-bottom: solid 2px $teal;
+                border-bottom: solid 2px $green;
                 background-color: $slate;
             }
         }
@@ -414,6 +414,9 @@ header.hero {
         display: table-cell;
         vertical-align: middle;
         background: rgba(0,0,0,.3);
+        .btn{
+          padding: 20px 80px;
+        }
         .hero-intro-text {
             margin-top: 60px;
             padding-top: 25px;
@@ -558,7 +561,7 @@ Stats
 
 .scene {
   height:600px;
-  background-color: $teal;
+  background-color: $green;
 
 }
 .scene > div {
@@ -806,7 +809,7 @@ Team
         .bar {
             height: 10px;
             margin: 10px 0;
-            background-color: $teal;
+            background-color: $green;
         }
     }
     .bar-chart-figure {
@@ -992,7 +995,7 @@ footer {
             a {
                 color: $white;
                 &:hover {
-                    color: $teal;
+                    color: $green;
                 }
             }
         }
@@ -1237,13 +1240,13 @@ Contact Page
   }
 
   .form:hover{
-    border-bottom:3px solid $teal;
+    border-bottom:3px solid $green;
   }
 
   .form:focus{
     color: white;
     outline: none;
-    border-bottom:3px solid $dark-teal;
+    border-bottom:3px solid $dark-green;
   }
 
   .textarea{
@@ -1981,7 +1984,7 @@ Responsive Media Queries
         color: $white;
     }
     .secondary-nav-wrapper ul li.subscribe a:hover {
-        color: $teal;
+        color: $green;
     }
     .secondary-nav-wrapper ul.secondary-nav li.subscribe {
         display: block;
