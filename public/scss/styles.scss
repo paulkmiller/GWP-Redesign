@@ -416,6 +416,7 @@ header.hero {
         background: rgba(0,0,0,.3);
         .btn{
           padding: 20px 80px;
+          background-color: $green;
         }
         .hero-intro-text {
             margin-top: 60px;
@@ -2178,7 +2179,7 @@ Responsive Media Queries
 }
 @media screen and (max-width:480px) {
     .header-nav-wrapper {
-        border-bottom: solid 5px #7ae2de;
+        border-bottom: solid 5px $green;
         background-color: $slate;
     }
     .header-nav-wrapper .logo {
