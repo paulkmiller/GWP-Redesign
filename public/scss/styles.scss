@@ -1291,18 +1291,19 @@ Contact Page
    float: left;
    height: auto;
    padding:15px;
-   color:$slate;
+   color:$orange;
    background:$white;
-   border:1px solid $slate;
+   border:1px solid $orange;
    outline: none;
    -webkit-transition: all 0.3s;
    -moz-transition: all 0.3s;
    transition: all 0.3s;
    margin:auto;
+   text-transform: uppercase;
  }
 
  .form-btn:hover{
-   background:$slate;
+   background:$orange;
    color: $white;
    border:1px solid $white;
  }
